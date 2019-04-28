@@ -9,7 +9,7 @@ You can use platformio either with an IDE or via command line.
 pio run
 ```
 4. If you see SUCCESS, that means it built :)
-5. or...  hi the build button at the bottom, or the build and upload button.
+5. or...  hit the build (tick) button at the bottom, or the 'build and upload' (cloud) button if your STLINK is directly connected.
 
 ## Command Line
 1. Install the command line tool via the [cli installation guide](https://docs.platformio.org/en/latest/installation.html)
