@@ -19,3 +19,5 @@
 *T* -send a machine test message A-ack N-nack T-test
 
 *?* -show this
+
+See Ascii Protocol page in [hbprotocol repo wiki](https://github.com/bipropellant/hbprotocol/wiki/ASCII-Protocol) for a more detailed explanation
