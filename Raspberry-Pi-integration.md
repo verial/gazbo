@@ -1,21 +1,25 @@
-You can install a Raspberry Pi (like a RPiZeroW) inside the hoverboard, powered from a DC-DC convertor off 12v, and connect to the hoverboard via an STLINK and a USB serial.
+You can install a Raspberry Pi (like a RPiZeroW or a RPI3) inside the hoverboard, powered from a DC-DC convertor off 12v or 38v, and connect to the hoverboard via an STLINK if you want to program it via the RPI and a USB serial.
 
-To program the firmware from the RPiZeroW:
+***
+:warning: If you want to use a Raspberry 3 with UART on GPIO, please follow [this guide](Using-Raspberry-Pi-3-GPIO-UART)
+***
 
-Install openocd (sudo apt-get install openocd).
+Also, on any RPI **don't forget to [make your serial port transparent](Making-you-serial-port-transparent)** before using it
 
-```
-openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg -f /usr/share/openocd/scripts/target/stm32f1x.cfg -c "program firmware.bin 0x08000000" -c "halt 100" -c "reset"
-```
-
-(I made a script flash.sh, and copy the firmware.bin over with winscp over ssh).
-
-To connect to the serial, I use a USB serial dongle, and use 
-
-```
-screen /dev/ttyUSB0
-```
-
-again, another script 't.sh'.
-
+## Accessing serial interface
+* If you use a USB serial dongle, use:
+  ```
+  screen /dev/ttyUSB0
+  ```
+* If you use GPIO UART, try:
+  ```
+  screen /dev/ttyS0
+  ```
+  OR
+  ```
+  screen /dev/ttyAMA0
+  ```
 For control, you can use Node-Red.
+
+## Flashing from RPI
+See [this page](Flashing-from-Raspberry)
