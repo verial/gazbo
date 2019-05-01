@@ -4,7 +4,7 @@ You can install a Raspberry Pi (like a RPiZeroW or a RPI3) inside the hoverboard
 :warning: If you want to use a Raspberry 3 with UART on GPIO, please follow [this guide](Using-Raspberry-Pi-3-GPIO-UART)
 ***
 
-Also, on any RPI **don't forget to [make your serial port transparent](Making-you-serial-port-transparent)** before using it
+Also, on any RPI **don't forget to [make your serial port transparent](Making-your-serial-port-transparent)** before using it
 
 ## Accessing serial interface
 * If you use a USB serial dongle, use:
