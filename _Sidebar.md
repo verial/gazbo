@@ -6,3 +6,6 @@
   * [Making your serial port transparent](Making-your-serial-port-transparent)
   * [Using the Rasberry 3 GPIO UART](Using-Raspberry-Pi-3-GPIO-UART)
   * [Flashing from Raspberry](Flashing-from-Raspberry)
+* **Physical Hardware**
+  * [Notes on signal GND](Physical-Hardware-notes)
+  
