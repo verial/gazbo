@@ -21,6 +21,10 @@ I've now drilled holes for attaching something to the board.  I chose to hijack 
 
 Removed the screw, and drilled it out to 6mm, all the way through the upper plastic:
 
+![](https://user-images.githubusercontent.com/3137332/59149033-1cdb0d00-8a08-11e9-92a7-aa06c92c5e90.png)
+
+Result:
+
 ![](https://user-images.githubusercontent.com/3137332/59148965-48a9c300-8a07-11e9-8fef-45722f7ef796.png)
 
 Behind this hole will be a 3D printed part to retain an M6 nut, so that anything can be bolted to (and unbolted from) the top of the hoverboard.
