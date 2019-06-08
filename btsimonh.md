@@ -25,6 +25,8 @@ Removed the screw, and drilled it out to 6mm, all the way through the upper plas
 
 Behind this hole will be a 3D printed part to retain an M6 nut, so that anything can be bolted to (and unbolted from) the top of the hoverboard.
 
+![](https://user-images.githubusercontent.com/3137332/59149010-d84f7180-8a07-11e9-80d6-f17b93fa441e.png)
+
 
 Technical: Because the sensor boards occupy USART2 and USART3, I use software serial on pins B2 and C9 at 9600 for machine control, using a USB to Serial adaptor from the RPiZeroW.  There is also an internally mounted USB hub and STLINK for firmware updating.  So my normal dev operational procedure is - 
 
