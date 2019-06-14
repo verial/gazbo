@@ -86,6 +86,7 @@ Iuv = (u>v)? (u-v-d):(u-v+d)
 or more accurately:
 
 ```
+Iuv = 0;
 if (u-v-d > 0) Iuv = u-v-d;
 if (u-v+d < 0) Iuv = u-v+d;
 ```
