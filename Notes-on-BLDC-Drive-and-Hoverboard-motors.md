@@ -77,7 +77,7 @@ The PWM value for u and v are actually represented  by the falling edge of u- an
 
 The * represents dead time, when neither FET is active for this signal.
 
-So from this, we can see that the resulting (u-v) signal is driven +v for (u-v-d) when u > v, and negative for (v-u-d) when v > u.
+if u, v, and w are in terms of our PWM value (0-2000), and d is our configured dead time (currently 32), we can see that the resulting (u-v) signal is driven +v for (u-v-d) when u > v, and negative for (v-u-d) when v > u.
 
 so the resulting current equation becomes:
 
@@ -92,7 +92,7 @@ if (u-v+d < 0) Iuv = u-v+d;
 
 *This complicates things if dead time is to be taken into account.*
 
-Our deadtime is configured to 32 counts at T ck_int, which I believe equates directly to 32 counts of u/v/w, so actually it's effect IS quite large (motors start turning at ~40, probably because below this Iuv is zero...).
+Our deadtime d is configured to 32 counts at T ck_int, which I believe equates directly to 32 counts of u/v/w, so actually it's effect IS quite large (motors start turning at ~40, probably because below this Iuv is zero...).
 
 ## Towards a quieter drive
 
