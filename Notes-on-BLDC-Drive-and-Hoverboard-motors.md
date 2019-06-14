@@ -83,6 +83,35 @@ so the resulting current equation becomes:
 
 Iuv = (u>v)? (u-v-d):(u-v+d)
 
-This complicates things if dead time is to be taken into account.
+or more accurately:
+
+```
+if (u-v-d > 0) Iuv = u-v-d;
+if (u-v+d < 0) Iuv = u-v+d;
+```
+
+*This complicates things if dead time is to be taken into account.*
+
+Our deadtime is configured to 32 counts at T ck_int, which I believe equates directly to 32 counts of u/v/w, so actually it's effect IS quite large (motors start turning at ~40, probably because below this Iuv is zero...).
+
+## Towards a quieter drive
+
+The ideal would be to drive sinusoidal currents in Ia, Ib, Ic.  To do this, we need to derive equations to equate u, v, w values to desired Ia, Ib, Ic values.
+
+```
+Iuv = Ivw = Iwu = 0
+if (u-v-d > 0) Iuv = u-v-d;
+if (u-v+d < 0) Iuv = u-v+d;
+if (v-w-d > 0) Ivw = v-w-d;
+if (v-w+d < 0) Ivw = v-w+d;
+if (w-u-d > 0) Iwu = w-u-d;
+if (w-u+d < 0) Iwu = w-u+d;
+
+Ia = Iuv - Iwu 
+Ib = Ivw - Iuv; 
+Ic = Iwu - Ivw;
+```
+
+
 
 
