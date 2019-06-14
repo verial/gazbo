@@ -8,5 +8,6 @@
   * [Flashing from Raspberry](Flashing-from-Raspberry)
 * **Physical Hardware**
   * [Notes on signal GND](Physical-Hardware-notes)
+  * [BLDC and Motors](Notes-on-BLDC-Drive-and-Hoverboard-motors)
 * **Projects**
   * [btsimonh](btsimonh)
