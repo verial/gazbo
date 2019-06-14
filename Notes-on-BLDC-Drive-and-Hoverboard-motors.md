@@ -27,13 +27,62 @@ Wye connection means that our drive into a channel is not driving a single coil,
 
 If we nominate the drive signals as u, v, w, and the coils as a, b, c, then the coil current in a static state with coil resistance R (assuming no dead time and that Vu, Vv, Vw can be directly equated to our PWM signals):
 
+```
 Ia = (Vu - Vv)/R + (Vu - Vw)/R = (2Vu - Vv - Vw)/R 
 Ib = (Vv - Vw)/R + (Vv - Vu)/R = (2Vv - Vw - Vu)/R; 
 Ic = (Vw - Vu)/R + (Vw - Vv)/R = (2Vw - Vu - Vv)/R;
+```
+
+* Dead Time
+
+Dead time affects the currents by reducing the *amplitude* of the difference terms (e.g. (Vu - Vv)) by a fixed value.
+
+* PWM and difference terms
+
+Because of the way the PWM and Current works, with center aligned PWM you can simplify the thoughts down to looking at half the PWM waveform:
+
+```
+For u > v
+u+          -------------¦-------------       
+     -------             ¦             -------
+u-   ------              ¦              ------
+           --------------¦--------------      
+           *             ¦             *      
+v+                 ------¦------              
+     --------------      ¦      --------------
+v-   -------------       ¦       -------------
+                  -------¦-------             
+                  *      ¦      *             
+u-v +       ------       ¦       ------       
+    0------*      *------¦------*      *------
+    -                    ¦                    
 
 
+For v > u
+u+                 ------¦------              
+     --------------      ¦      --------------
+u-   -------------       ¦       -------------
+                  -------¦-------             
+                  *      |      *             
+v+          -------------¦-------------       
+     -------             ¦             -------
+v-   ------              ¦              ------
+           --------------¦--------------      
+           *             ¦             *      
+u-v +                    ¦                    
+    0------*      *------¦------*      *------
+    -       ------       ¦       ------       
+```
+The PWM value for u and v are actually represented  by the falling edge of u- and v-.
 
+The * represents dead time, when neither FET is active for this signal.
 
- 
+So from this, we can see that the resulting (u-v) signal is driven +v for (u-v-d) when u > v, and negative for (v-u-d) when v > u.
+
+so the resulting current equation becomes:
+
+Iuv = (u>v)? (u-v-d):(u-v+d)
+
+This complicates things if dead time is to be taken into account.
 
 
