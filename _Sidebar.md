@@ -2,6 +2,7 @@
 * **Building and flashing**
   * [Using classical method](Building-and-flashing)
   * [Using PlatformIO](PlatformIO-building)
+  * [Flashing](Flashing-from-windows-or-linux-with-Open-OCD)
 * **[Raspberry Pi integration](Raspberry-Pi-integration)**
   * [Making your serial port transparent](Making-your-serial-port-transparent)
   * [Using the Rasberry 3 GPIO UART](Using-Raspberry-Pi-3-GPIO-UART)
