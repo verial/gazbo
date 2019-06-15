@@ -4,6 +4,8 @@ Install Openocd
 
 In windows from here http://gnutoolchains.com/arm-eabi/openocd/
 
+## If flashing fro the first time, you will need to unlock your device
+
 run go to the bin folder, and run 
 
 openocd -f interface/stlink-v2.cfg -f target/stm32f1x.cfg
@@ -18,6 +20,12 @@ type:
 reset halt
 stm32f1x unlock 0
 ```
+
+Untested by me, but the following should work to unlock without telnet?:
+
+`openocd -f interface/stlink-v2.cfg -f target/stm32f1x.cfg -c "reset" -c "stm32f1x unlock 0"`
+
+## Once the device is unlocked
 
 if you have a .hex file (like the repo contains):
 
