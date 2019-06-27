@@ -10,5 +10,6 @@
 * **Physical Hardware**
   * [Notes on signal GND](Physical-Hardware-notes)
   * [BLDC and Motors](Notes-on-BLDC-Drive-and-Hoverboard-motors)
+  * [Sensor Protocol](Sensor-protocol)
 * **Projects**
   * [btsimonh](btsimonh)
