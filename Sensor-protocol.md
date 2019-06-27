@@ -1,4 +1,10 @@
-Analysis of data send TO the sensor boards:
+## Baud rate
+The firmware should detect the baud rate.
+Common baud rates are ~23000 (STM32) and ~51000 (YST GD32)
+
+data recieved from the sensors is between 6 bytes and 10 bytes.
+
+## Analysis of data send TO the sensor boards:
 
 On a 23000 baud board:
 
