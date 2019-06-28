@@ -5,9 +5,13 @@ Consider what will happen when the analog wire is damaged or disconnected. When 
 
 # Sample Configurations
 You can switch the ADC channels via configuration when the wires are connected to the wrong input.
+
 `#define ADC_SWITCH_CHANNELS 1       // define if ADC1 is used for Steer and ADC2 for Speed`
+
 Steering can also be inverted via a simple config entry:
+
 `#define ADC_REVERSE_STEER 1         // define if ADC1 is used for Steer and ADC2 for Speed`
+
 
 
 ## Joystick
