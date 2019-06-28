@@ -6,12 +6,11 @@ Consider what will happen when the analog wire is damaged or disconnected. When 
 # Sample Configurations
 You can switch the ADC channels via configuration when the wires are connected to the wrong input.
 
-`#define ADC_SWITCH_CHANNELS 1       // define if ADC1 is used for Steer and ADC2 for Speed`
+`#define ADC_SWITCH_CHANNELS 1 `
 
 Steering can also be inverted via a simple config entry:
 
-`#define ADC_REVERSE_STEER 1         // define if ADC1 is used for Steer and ADC2 for Speed`
-
+`#define ADC_REVERSE_STEER 1`
 
 
 ## Joystick
@@ -37,7 +36,8 @@ A joystick has to potentiometers, in the resting position, both values are at a 
 (config untested, please tell us when you were able to test!)
 One Poti is used to control each wheel individually.
 Same config as Joystick,just add
-`#define ADC_TANKMODE 1              // define if each input should control one wheel`
+
+`#define ADC_TANKMODE 1       `
 
 ## Transpotter (Gametrak Controller)
 Controller can be harvested from [Gametrak Game Controllers](https://en.wikipedia.org/wiki/Gametrak). The hoverboard can be "pulled" by holding the gametrak wire. The length and angle of the wire is available as poti which can be used as a analog input.
