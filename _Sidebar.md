@@ -11,5 +11,6 @@
   * [Notes on signal GND](Physical-Hardware-notes)
   * [BLDC and Motors](Notes-on-BLDC-Drive-and-Hoverboard-motors)
   * [Sensor Protocol](Sensor-protocol)
+  * [Analog Inputs](ADC-Configurations)
 * **Projects**
   * [btsimonh](btsimonh)
