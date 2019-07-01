@@ -12,5 +12,7 @@
   * [BLDC and Motors](Notes-on-BLDC-Drive-and-Hoverboard-motors)
   * [Sensor Protocol](Sensor-protocol)
   * [Analog Inputs](ADC-Configurations)
+  * [UART Machine Protocol](https://github.com/bipropellant/bipropellant-protocol/wiki/Protocol-Defn)
+  * [UART ASCII Protocol](https://github.com/bipropellant/bipropellant-protocol/wiki/ASCII-protocol)
 * **Projects**
   * [btsimonh](btsimonh)
