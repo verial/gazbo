@@ -14,5 +14,6 @@
   * [Analog Inputs](ADC-Configurations)
   * [UART Machine Protocol](https://github.com/bipropellant/bipropellant-protocol/wiki/Protocol-Defn)
   * [UART ASCII Protocol](https://github.com/bipropellant/bipropellant-protocol/wiki/ASCII-protocol)
+  * [Hardware troubleshooting](Hardware troubleshooting)
 * **Projects**
   * [btsimonh](btsimonh)
